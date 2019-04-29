@@ -86,7 +86,7 @@ switch (a) {
 /*Реализовать четыре основные арифметические операции в виде функций с двумя параметрами.
 Обязательно использовать оператор return.*/
 
-function funcAmount(x, y) {
+/*function funcAmount(x, y) {
     return x + y;
 }
 
@@ -100,14 +100,14 @@ function funcComposition(x, y) {
 
 function funcPrivate(x, y) {
     return x / y;
-}
+}*/
 
 
 /*Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
 где arg1, arg2 — значения аргументов, operation — строка с названием операции.
     В зависимости от переданного значения выполнить одну из арифметических операций
     (использовать функции из пункта 5) и вернуть полученное значение (применить switch).*/
-
+/*
 function operation(arg1, arg2, operation) {
     switch (operation) {
         case "amount":
@@ -125,27 +125,23 @@ function operation(arg1, arg2, operation) {
     }
 }
 
-operation(5, 4, "difference");
+operation(5, 4, "difference");*/
 
 
 /* Сравнить null и 0. Объяснить результат.*/
 
-console.log(null > 0);
+/*console.log(null > 0);
 console.log(null < 0);
 console.log(null === 0);
-console.log(null !== 0);
+console.log(null !== 0);*/
 
 
 /* С помощью рекурсии организовать функцию возведения числа в степень.
 Формат: function power(val, pow), где val — заданное число, pow –— степень.*/
 
 function power(val, pow) {
-    var x = val * val;
+    return (pow != 1) ? val * power(val, pow - 1) : val; // 2*pow(2, 2)
 
-    if (pow > 0) {
-        x = power(val, pow - 1);
-        return x;
-    }
 }
 
-console.log(power(2, 3));
+console.log(power(10, 3));
