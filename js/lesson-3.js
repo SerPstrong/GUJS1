@@ -3,7 +3,8 @@
 /*var i = 2;
 
 while (i < 100) {
-    if (isPrime(i)) console.log(i);
+    if (isPrime(i)) {
+    console.log(i);}
     i++;
 }
 
@@ -23,17 +24,25 @@ function isPrime(num) {
 Предположим, есть сущность корзины. Нужно реализовать функционал подсчета
 стоимости корзины в зависимости от находящихся в ней товаров.*/
 
-var basket = [["капуста", 100, 4], ["морковь", 200, 5]];
-
 
 /*3. Товары в корзине хранятся в массиве. Задачи:
 a. Организовать такой массив для хранения товаров в корзине;
 b. Организовать функцию countBasketPrice, которая будет считать стоимость корзины.*/
 
+var basket = [
+    ["капуста", 100, 4],
+    ["морковь", 200, 5],
+];
 
-function countBasketPrice() {
-
+function countBasketPrice(items) {
+    var total = 0;
+    for (var i = 0; i < items.length; i++) {
+        total += items[i][1] * items[i][2]
+    }
+    return total;
 }
+
+console.log("Общая стоимость корзины" + countBasketPrice(basket));
 
 
 /*4. * Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла.
