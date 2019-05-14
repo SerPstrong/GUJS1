@@ -76,16 +76,23 @@ function detNumber(num) {
     Перенести функционал подсчета корзины на объектно-ориентированную базу.
 */
 
-var objBasket = {
-    phone: {
+var basket = [
+    phone = {
         quantity: 10,
         price: 12000,
     },
-    laptop: {
+    laptop = {
         quantity: 5,
         price: 33000,
     },
-};
+];
 
-console.log(/*"Общая стоимость корзины " + */objBasket);
+function countBasketPrice(items) {
+    var total = 0;
+    for (var i = 0; i < items.length; i++) {
+        total += items[i].quantity * items[i].price
+    }
+    return total;
+}
 
+console.log("Общая стоимость корзины " + countBasketPrice(basket));
