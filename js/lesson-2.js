@@ -140,7 +140,7 @@ console.log(null !== 0);*/
 Формат: function power(val, pow), где val — заданное число, pow –— степень.*/
 
 function power(val, pow) {
-    return (pow != 1) ? val * power(val, pow - 1) : val; // 2*pow(2, 2)
+    return (pow !== 1) ? val * power(val, pow - 1) : val; // 2*pow(2, 2)
 
 }
 
