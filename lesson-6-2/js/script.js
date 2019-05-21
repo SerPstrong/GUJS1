@@ -12,19 +12,19 @@ const products = [
         id: 1,
         name: "iphone XR",
         price: 70000,
-        image: "",
+        image: "img/gallery/small/1.jpg",
     },
     {
         id: 2,
         name: "Пленка",
         price: 1000,
-        image: "",
+        image: "img/gallery/small/2.jpg",
     },
     {
         id: 3,
         name: "Бампер",
         price: 3300,
-        image: "",
+        image: "img/gallery/small/3.jpg",
     }
 ];
 
@@ -84,6 +84,13 @@ function handlBuyClick(event) {
 
         countCartTotal(cart);
     }
+
+    if (event.target.tagName === "IMG") {
+        var $overlay = document.querySelector(".overlay");
+        $overlay.style.display = "block";
+
+        $overlay.querySelector(".preview").src = event.target.src;
+    }
 }
 
 function countCartTotal(items) {
@@ -95,13 +102,18 @@ function countCartTotal(items) {
     }
 
     var message = "";
-    if(items.length) {
-        message = "В корзине " + count + "товаров на сумму " + total+ " рублей"
-    }else {
+    if (items.length) {
+        message = "В корзине " + count + "товаров на сумму " + total + " рублей"
+    } else {
         message = "Корзина пуста";
     }
     var $cart = document.getElementById("cart");
     $cart.textContent = message;
+}
+
+function handleCloseClick() {
+    var $overlay = document.querySelector(".overlay");
+    $overlay.style.display = "none";
 }
 
 function init() {
@@ -109,6 +121,9 @@ function init() {
 
     var $catalog = document.querySelector("#catalog");
     $catalog.addEventListener("click", handlBuyClick);
+
+    var $close = document.querySelector(".close");
+    $close.addEventListener("click", handleCloseClick);
 }
 
 window.addEventListener("load", init);
