@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="divs"></div>
+<div class="divs"></div>
+<div class="divs"></div>
+<div class="divs"></div>
+
+<style>
+    .alert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+    }
+</style>
+
+<script>
+
+    let divs = document.querySelectorAll('.divs')[1];
+    let divs2 = document.querySelectorAll('.divs')[3];
+
+    divs.insertAdjacentHTML("afterbegin", `<div class="alert">
+    <strong>Всем привет!</strong> Вы прочитали важное сообщение.
+  </div>`);
+    divs2.insertAdjacentHTML("afterbegin", `<div class="alert">
+    <strong>Всем привет!</strong> Вы прочитали важное сообщение.
+  </div>`);
+</script>
+
+<ul id="ul"></ul>
+
+<script>
+    function getListContent() {
+        let fragment = new DocumentFragment();
+
+        for(let i=1; i<=3; i++) {
+            let li = document.createElement('li');
+            li.append(i);
+            fragment.append(li);
+        }
+
+        return fragment;
+    }
+
+    ul.append(getListContent()); // (*)
+</script>
+
+<ul id="ul2"></ul>
+
+<script>
+    function getListContent() {
+        let result = [];
+
+        for(let i=1; i<=3; i++) {
+            let li = document.createElement('li');
+            li.append(i);
+            result.push(li);
+        }
+
+        return result;
+    }
+
+    ul2.append(...getListContent()); // append + оператор "..." = друзья!
+</script>
+
+</body>
+</html>
