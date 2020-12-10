@@ -2,18 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20568626-c3fa-4b0b-960a-7beed75187f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/GU-JAVASCRIPT-1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson-5/DOM-instructions/ex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson-5/chess/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson-5/chess/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-5/js/chess.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-5/chess/js/chess.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-6/events/.idea/events.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-6/events/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-6/events/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-6/events/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-6/events/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-6/events/css/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-6/events/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-6/events/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-6/events/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson-6/events/output.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GU-JAVASCRIPT-1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,13 +45,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson-5/chess" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson-6/events" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -53,7 +69,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607488102929</updated>
-      <workItem from="1607488105960" duration="9888000" />
+      <workItem from="1607488105960" duration="10487000" />
+      <workItem from="1607571763721" duration="924000" />
+      <workItem from="1607574303686" duration="1144000" />
+      <workItem from="1607576383693" duration="3664000" />
+      <workItem from="1607584302874" duration="4569000" />
     </task>
     <servers />
   </component>
@@ -70,6 +90,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
